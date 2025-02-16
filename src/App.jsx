@@ -25,9 +25,9 @@ function App() {
         alignItems: 'center', 
         justifyContent: 'center',
         
-      }
-  }} 
-/>
+        }
+      }} 
+    />
     <Routes path="/*">
       <Route path="/testing" element={<Testing/>} />
       <Route path="/login" element={<LoginPage/>} />

@@ -23,11 +23,11 @@ export default function LoginPage() {
       toast.success("Login Success");
 
       const user = res.data.user;
+      localStorage.setItem('token',res.data.token);
+
       if(user.role === "admin"){
-        // window.location.href = "/admin/";
         navigate("/admin/");
       }else{
-        // window.location.href = "/";
         navigate("/");
       }
     }).catch((err)=>{
