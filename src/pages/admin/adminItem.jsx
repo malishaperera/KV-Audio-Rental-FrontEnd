@@ -15,7 +15,7 @@ export default function AdminItem() {
 
         if(!itemsLoad){
             axios
-            .get("http://localhost:3000/api/products", {
+            .get(`${import.meta.env.VITE_BACKEND_URL}/api/products`, {
             headers: {
                 Authorization: `Bearer ${token}`,
             },
@@ -38,7 +38,7 @@ export default function AdminItem() {
     if (window.confirm("Are you sure you want to delete this item?")) {
       setItems(items.filter((item) => item.key !== key));
       axios
-        .delete(`http://localhost:3000/api/products/${key}`, {
+        .delete(`${import.meta.env.VITE_BACKEND_URL}/api/products/${key}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
