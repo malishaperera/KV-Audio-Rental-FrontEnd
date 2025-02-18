@@ -1,0 +1,3 @@
+Project URl = https://gbmymxdefowpksrkwazy.supabase.co
+
+API Key = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdibXlteGRlZm93cGtzcmt3YXp5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzk4ODk3ODksImV4cCI6MjA1NTQ2NTc4OX0.84bE1LsJRrd5o-LNbfPtgjokrNo-38gGXgB8qf9L2Ds

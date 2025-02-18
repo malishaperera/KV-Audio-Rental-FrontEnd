@@ -25,7 +25,7 @@ function App() {
         display: 'flex',
         alignItems: 'center', 
         justifyContent: 'center',
-        
+  
         }
       }} 
     />
@@ -36,8 +36,8 @@ function App() {
       <Route path="/admin/*" element={<AdminPage/>} />
       <Route path="/*" element={<HomePage/>} />
 
-      
-      
+
+
     </Routes>
   </BrowserRouter>
   );
