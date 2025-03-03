@@ -9,6 +9,7 @@ export default function LoginPage() {
   const [password,setPassword] = useState("");
   const navigate = useNavigate();
 
+
   function handleOnSubmit(e){
     e.preventDefault();
     console.log("Submitted",email,password);
