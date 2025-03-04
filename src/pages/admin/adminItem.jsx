@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { CiCirclePlus } from "react-icons/ci";
 import { Link, useNavigate } from "react-router-dom";
 import { Pencil, Trash2 } from "lucide-react";
+import Header from "../../components/header";
 
 export default function AdminItem() {
   const [items, setItems] = useState([]);
@@ -53,7 +54,7 @@ export default function AdminItem() {
   };
 
   return (
-    <div className="max-w-6xl mx-auto bg-white p-6 rounded-lg shadow-md relative">
+    <div className="max-w-6xl mx-auto bg-white p-6 rounded-lg shadow-md relative overflow-auto">
       <h2 className="text-2xl font-semibold text-gray-800 mb-4">Admin Items</h2>
       
 
@@ -134,5 +135,8 @@ export default function AdminItem() {
         <CiCirclePlus className="text-[70px] fixed bottom-6 right-6 text-blue-600 hover:text-blue-800 cursor-pointer transition-all duration-300" />
       </Link>
     </div>
+
+
+
   );
 }

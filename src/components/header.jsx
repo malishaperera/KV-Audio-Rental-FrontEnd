@@ -14,8 +14,6 @@ export default function Header(){
             </Link>
         </header>
 
-    
-
       
     )
 }
