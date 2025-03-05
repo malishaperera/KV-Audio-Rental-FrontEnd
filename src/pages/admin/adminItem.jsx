@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { CiCirclePlus } from "react-icons/ci";
 import { Link, useNavigate } from "react-router-dom";
 import { Pencil, Trash2 } from "lucide-react";
-import Header from "../../components/header";
+
 
 export default function AdminItem() {
   const [items, setItems] = useState([]);

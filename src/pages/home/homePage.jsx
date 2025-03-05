@@ -5,6 +5,7 @@ import Contact from "./contact";
 import Gallery from "./gallery";
 import Items from "./items";
 import ErrorNotFound from "./error";
+import ProductOverview from "./productOverview";
 
 export default function HomePage(){
     return(
@@ -12,17 +13,17 @@ export default function HomePage(){
             <Header/>
             <div className="h-[calc(100vh-100px)] w-full bg-primary">
                 <Routes>
-                <Route path="/" element={<Home/>}>
-                </Route>
-                <Route path="/contact" element={<Contact/>}>
-                </Route>
-                <Route path="/gallery" element={<Gallery/>}>
-                </Route>
-                <Route path="/items" element={<Items/>}>
-                </Route>
-                <Route path="/*" element={<ErrorNotFound/>}>
-                </Route>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/contact" element={<Contact/>}/>
                 
+                <Route path="/gallery" element={<Gallery/>}/>
+
+                <Route path="/product/:key" element={<ProductOverview/>}/>
+           
+                <Route path="/items" element={<Items/>}/>
+            
+                <Route path="/*" element={<ErrorNotFound/>}/>
+                          
                 </Routes>
             </div>
         </>
